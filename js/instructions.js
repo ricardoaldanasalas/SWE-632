@@ -1,0 +1,19 @@
+function openModal(game) {
+    const modal = document.getElementById("instruction-modal");
+    const title = document.getElementById("modal-title");
+    const text = document.getElementById("modal-text");
+
+    if (game === "tic-tac-toe") {
+        title.textContent = "How to Play Tic-Tac-Toe";
+        text.textContent = "Tic-Tac-Toe is a two-player game. Take turns placing Xs and Os on a 3x3 grid. The first to get three in a row wins!";
+    } else if (game === "rock-paper-scissors") {
+        title.textContent = "How to Play Rock-Paper-Scissors";
+        text.textContent = "Select rock, paper, or scissors. Rock beats scissors, scissors beats paper, and paper beats rock.";
+    }
+
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("instruction-modal").style.display = "none";
+}
