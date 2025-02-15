@@ -9,6 +9,9 @@ function openModal(game) {
     } else if (game === "rock-paper-scissors") {
         title.textContent = "How to Play Rock-Paper-Scissors";
         text.textContent = "Select rock, paper, or scissors. Rock beats scissors, scissors beats paper, and paper beats rock.";
+    } else if (game === "matching-game") {
+        title.textContent = "How to Play Matching Game";
+        text.textContent = "Select two tiles to see if they match. If they don't, the tiles will flip back. Try to match each pair as quick as you can or in the least amount of tries.";
     }
 
     modal.style.display = "block";
